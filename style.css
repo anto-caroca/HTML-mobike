@@ -111,3 +111,75 @@ button:focus {
     text-align: center;
     font-size: 18px;
 }
+
+@media only screen and (min-width: 600px) {
+    
+    .app, .bottom {
+        display: none;
+    }
+    
+  }
+
+@media only screen and (max-width: 600px) {
+    .container {
+        display: block;
+        background-color: #f2f2f2;
+    }
+    .left, .right {
+        width: 100%;
+    }
+    .right {
+        background-color: #f2f2f2;
+    }
+    .web, .header, h1 {
+        display: none;
+    }
+ 
+    .app {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 70%!important;
+        padding: 55px 0 10px 0;
+    }
+
+    .icon {
+        margin-top: 0px;
+    }  
+    
+    .input-icons i {
+        color: gray;
+    }
+
+    ::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+        color: gray;
+      }
+
+    .input-field {
+        width: 77%;
+        margin-top: 0px;
+        border-bottom: solid #f2f2f2 1px;
+        background-color: white;
+        color: #2a2929;
+    }
+
+    .input-icons {
+        width: 70%;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 50px;
+    }
+
+    button {
+        margin-top: 0px;
+    }
+    .bottom a{
+        display: inline;
+        color: #2a2929;
+    }
+    .bottom {
+        padding: 0 35px 0 35px;
+    }
+    
+    
+  }
