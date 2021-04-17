@@ -1,185 +1,105 @@
 * {
     font-family: 'Open Sans', sans-serif; 
-    margin: 0;
 }
 
-.container {
-    display: flex;
+.bg-orange {
+    background-color: #ff4611;
+}
+
+.container-fluid {
     height: 100vh;
 }
 
-.left {
-    width: 50%;
-    margin-top: auto;
-    margin-bottom: auto;
-}
-
-.left img {
-    width: 100%;
-}
-
-h1{
-    font-size: 4rem;
-    font-weight: 700;
-    margin-top: 17%; 
-    text-align: center;
-    color: #fefefe;
-}
-
-.right {
-    width: 50%;
-    background: #ff4611;
-    
-    line-height: 1.5em;
-}
-
-.header {
-    text-align: right;
+.header i {
     color: #f2f2f2;
-    margin-right: 50px;
+}
+
+.h-90 {
+    height: 85vh!important;
+}
+
+input, select {
+    background: #ff4611!important;
+    border: none!important;
+    border-color: white!important;
+    border-bottom: solid white 1px!important;
+    color: #ffffff!important;
+}
+
+.input-group i {
+    color: #f2f2f2!important;
+    padding: 10px 5px 0 0!important;
 }
 
 ::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
-    color: #f2f2f2;
-    opacity: 1; /* Firefox */
+    color: #f2f2f2!important;
+    opacity: 1 !important;/* Firefox */
   }
 
-.input-icons i {
-    position: absolute;
-    color: #f2f2f2;
-}
-  
-.input-icons {
-    width: 50%;
-    margin-top: 50px;
-    margin-left: auto;
-    margin-right: auto;
-}
-  
-.icon {
-    padding: 15px;
-    min-width: 40px;
-    margin-top: 30px;
-}
-  
-.input-field {
-    width: 86%;
-    padding: 15px;
-    padding-left: 50px;
-    margin-top: 30px;
-    background: #ff4611;
-    color: #fefefe;
-    border: none;
-    border-color: white;
-    border-bottom: solid white 1px;
-}
-
-.input-field:focus {
-    outline: none !important;
-    border-bottom:1px solid white;  
-}
-
 button {
-    margin-top: 50px;
-    display: block;
-    width: 100%;
-    border: none;
-    background-color: #ff2600;
+    background-color: #ff2600!important;
+    border: none!important;
     color: #f2f2f2;
-    padding: 14px 28px;
-    font-size: 16px;
-    cursor: pointer;
-    text-align: center;
 }
 
 button:focus {
     outline: none !important;
-    border:1px solid white;  
-    box-shadow: 0 0 10px;
+    border:1px solid white !important;
+    box-shadow: 0 0 10px!important;
 }
 
-.forgetpass {
-    text-align: right;
-    float: right;
-    color: #f2f2f2;
-    
-}
-
-.register, .register a {
-    margin-top: 150px;
-    color: #f2f2f2;
-    text-align: center;
-    font-size: 18px;
-}
-
-@media only screen and (min-width: 600px) {
-    
+@media only screen and (min-width: 769px) {
     .app, .bottom {
         display: none;
     }
-    
-  }
+}
 
-@media only screen and (max-width: 600px) {
-    .container {
-        display: block;
-        background-color: #f2f2f2;
-    }
-    .left, .right {
-        width: 100%;
-    }
-    .right {
-        background-color: #f2f2f2;
-    }
+@media only screen and (max-width: 769px) {
     .web, .header, h1 {
-        display: none;
+        display: none !important;
     }
- 
+    .h-90 {
+        height: auto!important;
+    }
+    .container-fluid, .bg-orange {
+        background-color: #f2f2f2!important;
+        width: 100% !important;
+    }
     .app {
         display: block;
-        margin-left: auto;
-        margin-right: auto;
-        width: 70%!important;
+        margin-bottom: 20px;
+        width: 100%!important;
         padding: 55px 0 10px 0;
+        justify-self: center!important;
     }
-
-    .icon {
-        margin-top: 0px;
-    }  
-    
-    .input-icons i {
-        color: gray;
+    .orange {
+        background-color: #ff2600!important;
+        color: #ffffff;
     }
-
-    ::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
-        color: gray;
-      }
-
-    .input-field {
-        width: 77%;
-        margin-top: 0px;
-        border-bottom: solid #f2f2f2 1px;
-        background-color: white;
-        color: #2a2929;
+    .col-md-6 {
+        width: 100%;
+        margin: auto;
     }
-
-    .input-icons {
-        width: 70%;
-        margin-left: auto;
-        margin-right: auto;
-        margin-top: 50px;
+    .col-sm-12 {
+        width: 100%;
+        margin-top: 0;
     }
-
-    button {
-        margin-top: 0px;
+    .col-sm-12  form{
+        padding: 0 7% 0 7%;
     }
-    .bottom a{
-        display: inline;
-        color: #2a2929;
+    .app a  {
+        color: #ffffff!important;
     }
-    .bottom {
-        padding: 0 35px 0 35px;
+    input, select {
+        background: #ffffff!important;
     }
-    
-    
-  }
+    .input-group i {
+        color: #999999!important;
+    }
+    ::placeholder, select, option { /* Chrome, Firefox, Opera, Safari 10.1+ */
+        color: #999999!important;
+    }
+    a.text-white  {
+        color: #2a2929!important;
+    }
+}

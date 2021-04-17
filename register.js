@@ -15,13 +15,7 @@ function registerSubmit(event) {
         password repeat: ${passwordRepeat}
         dirección: ${address}
         `);
-
-        document.getElementById("username").value="";
-        document.getElementById("password").value="";
-        document.getElementById("password-repeat").value="";
-        document.getElementById("email").value="";
-        document.getElementById("address").value="";
-
+        alert("Registro exitoso!");
         window.location = "./card.html"
     } else {
         alert("contraseñas no coinciden");

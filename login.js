@@ -3,8 +3,11 @@ function loginSubmit(event) {
     let password = document.getElementById("password").value;
     
     event.preventDefault();
-    console.log(`Form Submitted! username: ${username} password: ${password}`);
-
+    console.log(`Form Submitted! 
+    username: ${username} 
+    password: ${password}`
+    );
+    alert("Login exitoso!");
     document.getElementById("username").value="";
     document.getElementById("password").value="";
 }
