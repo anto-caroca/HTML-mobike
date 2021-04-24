@@ -10,6 +10,7 @@ function loginSubmit(event) {
     alert("Login exitoso!");
     document.getElementById("username").value="";
     document.getElementById("password").value="";
+    window.location="../menu1.html"
 }
   
 const form = document.getElementById('login-form');
