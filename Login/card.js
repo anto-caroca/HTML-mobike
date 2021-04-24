@@ -31,6 +31,7 @@ function registerCard(event) {
         document.getElementById("emisor").value="";
 
         alert("Registro exitoso");
+        window.location = "./login.html"
         
     } else {
         alert("contraseñas no coinciden");
