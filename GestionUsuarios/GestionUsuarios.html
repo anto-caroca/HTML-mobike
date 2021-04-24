@@ -1,0 +1,169 @@
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>MoBike - Gestión de Usuarios</title>
+		<link rel="stylesheet" href="../css/estilos2.css">
+	</head>
+	<body>
+	<script type="text/javascript">
+		function buscar(){
+			if(document.getElementById('usuario').value == 'Juan'){
+				document.getElementById('nombre').value = 'Juan Pérez';
+				document.getElementById('ID').value = '1234-5';
+				document.getElementById('email').value = 'juan@perez.com';
+				document.getElementById('direccion').value = 'Su casa';
+			}
+			else{
+				alert('Usuario no encontrado');
+				document.getElementById('nombre').value = '';
+				document.getElementById('ID').value = '';
+				document.getElementById('email').value = '';
+				document.getElementById('direccion').value = '';
+				document.getElementById('motivo').value = '';
+			}
+		}
+		function guardar(){
+			if(document.getElementById('nombre').value != '' &&
+			document.getElementById('ID').value != '' &&
+			document.getElementById('email').value != '' &&
+			document.getElementById('direccion').value != '' &&
+			document.getElementById('motivo').value != ''){
+				alert('Datos guardados exitosamente');
+				document.getElementById('usuario').value = '';
+				document.getElementById('nombre').value = '';
+				document.getElementById('ID').value = '';
+				document.getElementById('email').value = '';
+				document.getElementById('direccion').value = '';
+				document.getElementById('motivo').value = '';
+			}
+			else{
+				alert('Debe completar todos los datos');
+			}
+		}
+    </script>
+		<div style="position: relative; height:80px; background-color:ff4611; color:white; font-size:28px; font-family: 'Open Sans', sans-serif; font-weight: bold; margin:0px;">
+			<div style="position: absolute; top: 26px; width: 100%; text-align:center;">
+				GESTIÓN DE USUARIOS
+			</div>
+		</div>
+		<div style="width:776; height:940;">
+			<img src="img/bg1.jpg" width="776" height="940">
+		</div>
+		<div style="position: absolute; left: 780; top: 90; font-family: 'Open Sans', sans-serif; vertical-align: middle">
+			<table>
+				<tr>
+					<td rowspan="11">
+						&nbsp
+					</td>
+				</tr>
+				<tr>
+					<td style="vertical-align: middle;">
+						Usuario:
+					</td>
+					<td style="vertical-align: middle;">
+						<input type="text" id="usuario">
+					</td>
+					<td style="vertical-align: middle;">
+						<img src="img/search.png" height="35" width="35" onclick="buscar()">
+					</td>
+				</tr>
+				<tr>
+					<td colspan="3">
+						<hr>
+					</td>
+				</tr>
+				<tr>
+					<td style="vertical-align: middle;">
+						Nombre:
+					</td>
+					<td style="vertical-align: middle;">
+						<input type="text" id="nombre">
+					</td>
+				</tr>
+				<tr>
+					<td style="vertical-align: middle;">
+						R.U.T./ID:
+					</td>
+					<td style="vertical-align: middle;">
+						<input type="text" id="ID">
+					</td>
+				<tr>
+					<td style="vertical-align: middle;">
+						E-mail:
+					</td>
+					<td style="vertical-align: middle;">
+						<input type="text" id="email">
+					</td>
+				</tr>
+				<tr>
+					<td style="vertical-align: middle;">
+						Dirección:
+					</td>
+					<td style="vertical-align: middle;">
+						<input type="text" id="direccion">
+					</td>
+				</tr>
+				<tr>
+					<td colspan="3">
+						<hr>
+					</td>
+				</tr>
+				<tr>
+					<td style="vertical-align: middle;">
+						Acción:
+					</td>
+					<td style="vertical-align: middle;">
+						<input type="radio" id="bloquear" name="accion" checked>
+						Bloquear
+					</td>
+					<td style="vertical-align: middle;">
+						<input type="radio" id="deshabilitar" name="accion">
+						Deshabilitar
+					</td>
+				<tr>
+					<td style="vertical-align: middle;">
+						Motivo de la acción:
+					</td>
+				</tr>
+				<tr>
+					<td style="vertical-align: middle;" colspan="3">
+						<textarea id="motivo" name="motivo" rows="10" cols="48"></textarea>
+					</td>
+				</tr>
+				<tr>
+					<td colspan="3">
+						&nbsp;
+					</td>
+				</tr>
+				<tr>
+					<td style="vertical-align: middle; text-align: center;" colspan="4">
+						<img src="img/guardar.png" onclick="guardar()">
+					</td>
+				</tr>
+			</table>
+		</div>
+
+<header class="header">
+		<div class="container">
+		<div class="btn-menu">
+			<label for="btn-menu">☰</label>
+		</div>
+			<div class="logo">
+				<h1> MoBike </h1>
+	</header>
+<!-- Menú Lateral --------------->
+<input type="checkbox" id="btn-menu">
+<div class="container-menu">
+	<div class="cont-menu">
+		<nav>
+			<a href="../menu1.html"> Inicio </a>
+			<a href="../UbicarBicicleta/mobikeBuscar.html"> Ubicar Bicicleta </a>
+			<a href="../pantallasConQR/mobikeDesbloquearBicicleta.html"> Seleccionar Bicicleta </a>
+			<a href="#"> Viajes Concluidos </a>
+		</nav>
+		<label for="btn-menu">✖️</label>
+	</div>
+</div>
+
+	</body>
+</html>
