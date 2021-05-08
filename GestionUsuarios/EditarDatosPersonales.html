@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+	<link rel="stylesheet" href="css/estilos.css">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- CSS only -->
@@ -15,33 +16,32 @@
     <link rel="stylesheet" href="../css/style.css">
     <!-- font awesome -->
     <script src="https://kit.fontawesome.com/85dbdfad05.js" crossorigin="anonymous"></script>
-    <title>Login MoBike</title>
+    <title>Editar usuario</title>
 </head>
 <body>
-    <div class="container-fluid m-0 p-0 row">
-        <div class="col-lg-6 col-md-6 col-sm-12 align-self-center p-0">
-            <img class="web mx-auto d-block w-100" src="web.png" alt="mobike">
-            <div class="app mx-auto orange">
-                <div class="px-3 d-flex justify-content-between align-self-start">
-                    <a href="./login.html"><i class="fas fa-arrow-left pt-2"></i></a>
-                    <h3>Crear Cuenta</h3>
-                    <i class="fas fa-check pt-2"></i>
-                </div>
-                <i class="fas fa-camera camera fa-3x d-flex justify-content-center py-4"></i>
+    <div class="row" style="background-color: #ff4611;">
 
-            </div>
+        <div class="col-4"></div>
+        <div class="col-4">
+            <h2 id="textcenter"></h2>
+        </div>
+        <div class="col-4">
+            <a href="#">
+                <img src="img/profile-user.png" alt="" class="user">
+            </a>
+
+        </div>
+    </div>
+    <div class="container-fluid m-0 p-0 row">
+        <div class="col-lg-3 col-md-6 col-sm-12 align-self-center p-0">
+            
+
         </div>
 
         <div class="col-lg-6 col-md-6 col-sm-12 bg-orange">
-            <div class="header d-flex justify-content-end">
-                <i class="fa fa-instagram p-3" title="instagram"></i>
-                <i class="fa fa-facebook p-3" title="facebook"></i>
-                <i class="fa fa-youtube p-3" title="youtube"></i>
-                <i class="fa fa-twitter p-3" title="twitter"></i>
-            </div> 
             <div class="row h-90 d-flex justify-content-center">
                 <div class="col-lg-6 col-md-8 col-sm-12 my-auto">
-                    <h1 class="text-center mb-5 text-white fw-bold">MoBike</h1>
+                    <h1 class="text-center mb-5 text-white fw-bold">Editar datos personales</h1>
                     <form id="register-form" method="post">
                         <div class="input-group mb-4">
                             <i class=" fa fa-user"></i>
@@ -62,19 +62,11 @@
                         <div class="input-group mb-4">
                             <i class="fas fa-map-marker-alt"></i>
                             <input type="text" class="form-control" id="address" placeholder="dirección" aria-describedby="inputGroupPrepend5" required>
-                        </div>
-                        
-                        <div class="d-grid gap-2">
-                            <button class="btn btn-secondary mt-5" type="submit" title="Registrar">
-                                <i class="fas fa-exclamation-circle"></i>
-                                Registrar Tarjeta de Crédito
-                            </button>
-                        </div>
+                        </div>     
                     </form>
-                    
                     <p class="d-flex justify-content-center pt-5 mt-5">
-                        <a class="text-white" href="./login.html">
-                            Login
+                        <a class="text-white" href="./register.html">
+                            Modificar Datos
                         </a>
                     </p>
                 </div>
@@ -82,5 +74,29 @@
         </div>
     </div>
     <script src="./register.js"></script>
+</body>
+<body>
+	<header class="header">
+		<div class="container">
+		<div class="btn-menu">
+			<label for="btn-menu">☰</label>
+		</div>
+			<div class="logo">
+				<h1> MoBike </h1>
+	</header>
+<!-- Menú Lateral --------------->
+<input type="checkbox" id="btn-menu">
+<div class="container-menu">
+	<div class="cont-menu">
+		<nav>
+            <a href="../menu1.html"> Inicio </a>
+			<a href="../GestionUsuarios/EditarDatosPersonales.html"> Editar datos personales </a>
+			<a href="../UbicarBicicleta/mobikeBuscar.html"> Ubicar Bicicleta </a>
+			<a href="../pantallasConQR/mobikeDesbloquearBicicleta.html"> Seleccionar Bicicleta </a>
+			<a href="../ViajeConcluido/Viaje.html?lat1=-33.45521520365&lng1=-70.69866181311"> Viajes Concluidos </a>
+		</nav>
+		<label for="btn-menu">✖️</label>
+	</div>
+</div>
 </body>
 </html>
