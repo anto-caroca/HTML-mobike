@@ -13,38 +13,53 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
     <!-- css -->
-    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="css/style.css">
     <!-- font awesome -->
     <script src="https://kit.fontawesome.com/85dbdfad05.js" crossorigin="anonymous"></script>
     <title>Editar usuario</title>
 </head>
 <body>
-    <div class="row" style="background-color: #ff4611;">
-
-        <div class="col-4"></div>
-        <div class="col-4">
-            <h2 id="textcenter"></h2>
-        </div>
-        <div class="col-4">
-            <a href="#">
-                <img src="img/profile-user.png" alt="" class="user">
-            </a>
-
-        </div>
-    </div>
-    <div class="container-fluid m-0 p-0 row">
-        <div class="col-lg-3 col-md-6 col-sm-12 align-self-center p-0">
-            
-
-        </div>
-
-        <div class="col-lg-6 col-md-6 col-sm-12 bg-orange">
-            <div class="row h-90 d-flex justify-content-center">
+    <div class="container-fluid m-0 p-0 row bg-orange">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-orange">
+            <div class="container-fluid">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <a class="navbar-brand" href="#">MoBike</a>
+            <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" href="./menu1.html">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./GestionUsuarios.html">Gestión de Usuarios</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="./EditarDatosPersonales.html">Editar Datos Personales</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./mobikeBuscar.html">Ubicar Bicicleta</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./desbloquear.html">Seleccionar Bicicleta</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./Viaje.html?lat1=-33.45521520365&lng1=-70.69866181311">Viajes Concluidos</a>
+                    </li>
+                </ul>
+                
+            </div>
+            </div>
+        </nav>
+    </div>     
+    <div class="bg-edit"></div>
+    <div class="container col-lg-6 col-md-6 col-sm-12">
+            <div class="row d-flex justify-content-center">
                 <div class="col-lg-6 col-md-8 col-sm-12 my-auto">
-                    <h1 class="text-center mb-5 text-white fw-bold">Editar datos personales</h1>
-                    <form id="register-form" method="post">
+                    <h3 class="text-center my-5  fw-bold">Editar datos personales</h3>
+                    <form id="edit-form" method="post">
                         <div class="input-group mb-4">
-                            <i class=" fa fa-user"></i>
+                            <i class="fa fa-user"></i>
                             <input type="text" class="form-control" id="username" placeholder="nombre" aria-describedby="inputGroupPrepend1" required>
                         </div>
                         <div class="input-group mb-4">
@@ -62,41 +77,15 @@
                         <div class="input-group mb-4">
                             <i class="fas fa-map-marker-alt"></i>
                             <input type="text" class="form-control" id="address" placeholder="dirección" aria-describedby="inputGroupPrepend5" required>
+                        </div>
+                        <div class="d-grid gap-2 mb-5">
+                            <button  class="btn btn-primary mt-5" type="submit" title="Ingresar">Guardar</button> 
                         </div>     
                     </form>
-                    <p class="d-flex justify-content-center pt-5 mt-5">
-                        <a class="text-white" href="./register.html">
-                            Modificar Datos
-                        </a>
-                    </p>
                 </div>
             </div>
-        </div>
     </div>
-    <script src="./register.js"></script>
-</body>
-<body>
-	<header class="header">
-		<div class="container">
-		<div class="btn-menu">
-			<label for="btn-menu">☰</label>
-		</div>
-			<div class="logo">
-				<h1> MoBike </h1>
-	</header>
-<!-- Menú Lateral --------------->
-<input type="checkbox" id="btn-menu">
-<div class="container-menu">
-	<div class="cont-menu">
-		<nav>
-            <a href="../menu1.html"> Inicio </a>
-			<a href="../GestionUsuarios/EditarDatosPersonales.html"> Editar datos personales </a>
-			<a href="../UbicarBicicleta/mobikeBuscar.html"> Ubicar Bicicleta </a>
-			<a href="../pantallasConQR/mobikeDesbloquearBicicleta.html"> Seleccionar Bicicleta </a>
-			<a href="../ViajeConcluido/Viaje.html?lat1=-33.45521520365&lng1=-70.69866181311"> Viajes Concluidos </a>
-		</nav>
-		<label for="btn-menu">✖️</label>
-	</div>
-</div>
+
+    <script src="js/editar.js"></script>
 </body>
 </html>

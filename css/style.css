@@ -6,10 +6,6 @@
     background-color: #ff4611;
 }
 
-.container-fluid {
-    height: 100vh;
-}
-
 .header i {
     color: #f2f2f2;
 }
@@ -18,7 +14,7 @@
     height: 85vh!important;
 }
 
-input, select {
+.input-orange, .select-orange {
     background: #ff4611!important;
     border: none!important;
     border-color: white!important;
@@ -31,10 +27,15 @@ input, select {
     padding: 10px 5px 0 0!important;
 }
 
-::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+.pl-white ::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
     color: #f2f2f2!important;
     opacity: 1 !important;/* Firefox */
   }
+
+.um-form ::placeholder {
+    color: #999999!important;
+    
+}
 
 button {
     background-color: #ff2600!important;
@@ -61,7 +62,11 @@ button:focus {
     .h-90 {
         height: auto!important;
     }
-    .container-fluid, .bg-orange {
+    /* .container-fluid, .bg-orange {
+        background-color: #f2f2f2!important;
+        width: 100% !important;
+    } */
+    .responsive {
         background-color: #f2f2f2!important;
         width: 100% !important;
     }
@@ -91,13 +96,14 @@ button:focus {
     .app a  {
         color: #ffffff!important;
     }
-    input, select {
+    .input-orange, .select-orange {
         background: #ffffff!important;
+        color: #2a2929!important;
     }
     .input-group i {
         color: #999999!important;
     }
-    ::placeholder, select, option { /* Chrome, Firefox, Opera, Safari 10.1+ */
+    .pl-white ::placeholder, .select, option { /* Chrome, Firefox, Opera, Safari 10.1+ */
         color: #999999!important;
     }
     a.text-white  {
@@ -105,57 +111,80 @@ button:focus {
     }
 }
 
-	/*Menù lateral*/
-	#btn-menu{
-		display: none;
-	}
-	.container-menu{
-		position: absolute;
-		background: rgba(0,0,0,0.5);
-		width: 100%;
-		height: 100vh;
-		top: 0;left: 0;
-		transition: all 500ms ease;
-		opacity: 0;
-		visibility: hidden;
-	}
-	#btn-menu:checked ~ .container-menu{
-		opacity: 1;
-		visibility: visible;
-	}
-	.cont-menu{
-		width: 100%;
-		max-width: 250px;
-		background: #1c1c1c;
-		height: 100vh;
-		position: relative;
-		transition: all 500ms ease;
-		transform: translateX(-100%);
-	}
-	#btn-menu:checked ~ .container-menu .cont-menu{
-		transform: translateX(0%);
-	}
-	.cont-menu nav{
-		transform: translateY(15%);
-	}
-	.cont-menu nav a{
-		display: block;
-		text-decoration: none;
-		padding: 20px;
-		color: #c7c7c7;
-		border-left: 5px solid transparent;
-		transition: all 400ms ease;
-	}
-	.cont-menu nav a:hover{
-		border-left: 5px solid #c7c7c7;
-		background: #1f1f1f;
-	}
-	.cont-menu label{
-		position: absolute;
-		right: 5px;
-		top: 10px;
-		color: #fff;
-		cursor: pointer;
-		font-size: 18px;
-	}
-	/*Fin de Menù lateral*/
+/*  estilos menu 1 */
+.bgimg-1 {
+    background-image: url("../img/bike.png");
+    height: 94vh !important;
+    width: auto;
+    opacity: 0.65;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+/* fin estilos menu 1 */
+
+/*  estilos gestión de usuarios */
+.bg-um {
+    background-image: url("../img/um.jpg");
+    height: 30vh !important;
+    width: auto;
+    opacity: 0.65;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+/* fin estilos gestión de usuarios */
+
+/*  estilos editar datos personales */
+.bg-edit {
+    background-image: url("../img/city.jpg");
+    height: 30vh !important;
+    width: auto;
+    opacity: 0.65;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#edit-form i {
+    color: #999999 !important;
+}
+/* fin estilos editar datos personales */
+
+/* estilos qr desbloquear bicicleta*/
+.qr-input {
+    padding:5px;
+    background-color:transparent;
+    border:none;
+    border-bottom:solid 4px #ff4611;
+    width:250px;
+    font-size:16px;
+}
+
+.qr-btn {
+    background-color:#ff4611;
+    padding:8px;
+    color:white;
+    cursor:pointer;
+}
+/* fin estilos qr desbloquear bicicleta*/
+
+/* viaje concluido */
+.viaje{
+    height: 92vh;
+    width: auto;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.bg-end{
+    background-image: url("../img/end.jpg");
+    height: 92vh !important;
+    padding: 0;
+    opacity: 0.75 !important;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.card{
+    
+}
+/* fin viaje concluido */

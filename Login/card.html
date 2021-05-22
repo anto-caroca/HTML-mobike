@@ -18,9 +18,9 @@
     <title>Login MoBike</title>
 </head>
 <body>
-    <div class="container-fluid m-0 p-0 row">
+    <div class="container-fluid responsive m-0 p-0 row">
         <div class="col-lg-6 col-md-6 col-sm-12 align-self-center p-0">
-            <img class="web mx-auto d-block w-100" src="web.png" alt="mobike">
+            <img class="web mx-auto d-block w-100" src="../img/web.png" alt="mobike">
             <div class="app mx-auto orange">
                 <div class="px-3 pb-4 d-flex justify-content-between align-self-start">
                     <a href="./register.html"><i class="fas fa-arrow-left pt-2"></i></a>
@@ -30,7 +30,7 @@
             </div>
         </div>
 
-        <div class="col-lg-6 col-md-6 col-sm-12 bg-orange">
+        <div class="col-lg-6 col-md-6 col-sm-12 bg-orange responsive">
             <div class="header d-flex justify-content-end">
                 <i class="fa fa-instagram p-3" title="instagram"></i>
                 <i class="fa fa-facebook p-3" title="facebook"></i>
@@ -41,33 +41,33 @@
                 <div class="col-lg-6 col-md-8 col-sm-12 my-auto">
                     <h1 class="text-center mb-5 text-white fw-bold">MoBike</h1>
                     <form id="register-form" method="post">
-                        <div class="input-group mb-4">
+                        <div class="input-group mb-4 pl-white">
                             <i class="fas fa-id-card"></i>
-                            <input type="text" class="form-control" id="titular" placeholder="titular" aria-describedby="inputGroupPrepend1" required>
+                            <input type="text" class="form-control input-orange" id="titular" placeholder="titular" aria-describedby="inputGroupPrepend1" required>
                         </div>
-                        <div class="input-group mb-4">
+                        <div class="input-group mb-4 pl-white">
                             <i class="fas fa-credit-card"></i>
-                            <input type="password" class="form-control" id="card_num" minlength="9" maxlength="9" placeholder="número de tarjeta" aria-describedby="inputGroupPrepend2" required>
+                            <input type="password" class="form-control input-orange" id="card_num" minlength="9" maxlength="9" placeholder="número de tarjeta" aria-describedby="inputGroupPrepend2" required>
                         </div>
-                        <div class="input-group mb-4">
+                        <div class="input-group mb-4 pl-white">
                             <i class=" fa fa-lock"></i>
-                            <input type="password" class="form-control" id="password" minlength="4" maxlength="14" placeholder="contraseña" aria-describedby="inputGroupPrepend3" required>
+                            <input type="password" class="form-control input-orange" id="password" minlength="4" maxlength="14" placeholder="contraseña" aria-describedby="inputGroupPrepend3" required>
                         </div>
-                        <div class="input-group mb-4">
+                        <div class="input-group mb-4 pl-white">
                             <i class=" fa fa-lock"></i>
-                            <input type="password" class="form-control" id="password-repeat" minlength="4" maxlength="14" placeholder="repetir contraseña" aria-describedby="inputGroupPrepend4" required>
+                            <input type="password" class="form-control input-orange" id="password-repeat" minlength="4" maxlength="14" placeholder="repetir contraseña" aria-describedby="inputGroupPrepend4" required>
                         </div>
-                        <div class="input-group mb-4">
+                        <div class="input-group mb-4 pl-white">
                             <i class="fas fa-calendar-alt"></i>
-                            <input type="text" class="form-control" id="mmaa" minlength="4" maxlength="4" placeholder="MMAA" aria-describedby="inputGroupPrepend5" required>
+                            <input type="text" class="form-control input-orange" id="mmaa" minlength="4" maxlength="4" placeholder="MMAA" aria-describedby="inputGroupPrepend5" required>
                         </div>
-                        <div class="input-group mb-4">
+                        <div class="input-group mb-4 pl-white">
                             <i class=" fa fa-lock"></i>
-                            <input type="password" class="form-control" id="cvv" minlength="3" maxlength="3" placeholder="CVV" aria-describedby="inputGroupPrepend6" required>
+                            <input type="password" class="form-control input-orange" id="cvv" minlength="3" maxlength="3" placeholder="CVV" aria-describedby="inputGroupPrepend6" required>
                         </div>
-                        <div class="input-group mb-4">
+                        <div class="input-group mb-4 pl-white">
                             <i class="fas fa-money-check-alt"></i>
-                            <select class="form-control" name="emisor" id="emisor" placeholder="emisor" aria-describedby="inputGroupPrepend7" required>
+                            <select class="form-control select-orange" name="emisor" id="emisor" placeholder="emisor" aria-describedby="inputGroupPrepend7" required>
                                 <option value="">Emisor</option>
                                 <option value="Banco de Chile">Banco de Chile</option>
                                 <option value="Banco Estado">Banco Estado</option>
@@ -93,6 +93,6 @@
             </div>
         </div>
     </div>
-    <script src="./card.js"></script>
+    <script src="../js/card.js"></script>
 </body>
 </html>

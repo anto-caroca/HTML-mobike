@@ -1,12 +1,30 @@
 	*{
 		margin: 0;
 		padding: 0;
-		box-sizing: border-box;
 		font-family: 'Open Sans', sans-serif;
 	}
-	body{
+
+	/*  estilos menu 1 */
+	body {
+		background-color: #cccccc;
+	}
+	.bg-orange{
 		background-color: #ff4611;
 	}
+	.bgimg-1 {
+		background-image: url("../img/bike.png");
+		height: 94vh !important;
+		width: auto;
+    	opacity: 0.65;
+		background-position: center;
+		background-repeat: no-repeat;
+		background-size: cover;
+	}
+	/* fin estilos menu 1 */
+
+	
+	
+
 	.capa{
 		position: fixed;
 		width: 100%;

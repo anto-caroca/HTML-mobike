@@ -28,7 +28,7 @@
             <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="./menu1.html">Inicio</a>
+                        <a class="nav-link" href="./menu1.html">Inicio</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="./GestionUsuarios.html">Gestión de Usuarios</a>
@@ -43,7 +43,7 @@
                         <a class="nav-link" href="./desbloquear.html">Seleccionar Bicicleta</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="./Viaje.html?lat1=-33.45521520365&lng1=-70.69866181311">Viajes Concluidos</a>
+                        <a class="nav-link active" aria-current="page" href="./Viaje.html?lat1=-33.45521520365&lng1=-70.69866181311">Viajes Concluidos</a>
                     </li>
                 </ul>
                 
@@ -51,8 +51,40 @@
             </div>
         </nav>
     </div>
+
+    <div class="container-fluid m-0 p-0 row">
+        <div class="col-lg-4 col-md-6 col-sm-12 bg-end m-0 p-0">
+            <div class="card w-75 mx-auto mt-5 ">
+                <div class="card-body">
+                    <h5 class="card-title">Resumen de tu Viaje</h5>
+                    <div class="card-header my-4">
+                        <p class="card-text">
+                            With supporting text below as a natural lead-in to additional content.
+                        </p>
+                        <p class="card-text">
+                            With supporting text below as a natural lead-in to additional content.
+                        </p>
+                    </div>
+                    <div class="d-flex justify-content-between">
+                        <a href="#" class="btn btn-success">Pagar</a>
+                        <a href="#" class="btn btn-primary">¿Dudas?</a>
+                        <a href="#" class="btn btn-danger">Bloquear</a>
+                    </div>
+                </div>
+              </div>
+        </div>
+        <div class="col-lg-8 col-md-6 col-sm-12 m-0 p-0">
+            <div class="viaje" id="map"></div>
+        </div>
+    </div>
     
-    <div class=" bgimg-1"></div>
-          
+    
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCEucHNIWggR7kLSP1GP8LEmw78ElotMi8&callback=initMap"
+        async defer>
+    </script>
+
+     
+       
+    <script src="js/funciones.js"></script>
 </body>
 </html>
