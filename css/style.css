@@ -1,7 +1,9 @@
 * {
     font-family: 'Open Sans', sans-serif; 
 }
-
+.height-100{
+    height: 100vh !important;
+}
 .bg-orange {
     background-color: #ff4611;
 }
@@ -37,13 +39,13 @@
     
 }
 
-button {
+.button-orange {
     background-color: #ff2600!important;
     border: none!important;
     color: #f2f2f2;
 }
 
-button:focus {
+.button-orange:focus {
     outline: none !important;
     border:1px solid white !important;
     box-shadow: 0 0 10px!important;
@@ -112,9 +114,9 @@ button:focus {
 }
 
 /*  estilos menu 1 */
-.bgimg-1 {
+.bgimg-1, .bg-logout {
     background-image: url("../img/bike.png");
-    height: 94vh !important;
+    height: 94vh;
     width: auto;
     opacity: 0.65;
     background-position: center;
@@ -159,13 +161,6 @@ button:focus {
     width:250px;
     font-size:16px;
 }
-
-.qr-btn {
-    background-color:#ff4611;
-    padding:8px;
-    color:white;
-    cursor:pointer;
-}
 /* fin estilos qr desbloquear bicicleta*/
 
 /* viaje concluido */
@@ -179,12 +174,12 @@ button:focus {
     background-image: url("../img/end.jpg");
     height: 92vh !important;
     padding: 0;
-    opacity: 0.75 !important;
+    opacity: 0.75;
     background-repeat: no-repeat;
     background-size: cover;
+    z-index: 0;
 }
-
-.card{
-    
+.text{
+    color: rgba(0, 0, 0, 1);
 }
 /* fin viaje concluido */
