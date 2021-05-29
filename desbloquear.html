@@ -55,24 +55,17 @@
         </nav>
     </div>
 
-    <div class="imagen">
-        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d106523.64603527797!2d-70.6347008!3d-33.4528512!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses-419!2scl!4v1618094860854!5m2!1ses-419!2scl" width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-    </div> 
-    
+       
     <div class=""></div>
 
     <div class="container text-center mb-5">
-        <h3>QR Code Generator</h3>
-            <div>
-              <input class="qr-input" id="qr-text" type="text" placeholder="Text to generate QR code"/>
-            </div>
-             <br/>
-            <div>
-              <button class="btn button-orange text-white" onclick="generateQRCode()">Create QR Code</button>
-            </div>
-            <br/>
-            <p id="qr-result">This is deault QR code:</p>
+        <h3>Escanea tu Código </h3>            
+                     
           <canvas id="qr-code"></canvas>
+          <div>
+            <button class="btn button-orange text-white px-5"onclick="location.href='./Viaje.html?lat1=-33.45521520365&lng1=-70.69866181311'">Aceptar</button>
+          </div>
+
     </div>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/qrious/4.0.2/qrious.min.js"></script>
           

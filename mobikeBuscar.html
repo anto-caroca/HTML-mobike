@@ -23,6 +23,7 @@
         src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDHjBU2U_3ikOHcnP1CTrB1e8BJouUMS7o&callback=initMap&libraries=&v=weekly"
         async
     ></script>
+    <script src="js/search.js"></script> 
 
 </head>
 <body>
@@ -77,30 +78,28 @@
           </thead>
           <tbody>
             <tr>
-              <td><input type="radio" checked /></td>
+              <td><input type="radio" name="bici" value="123456">
               <td>123456</td>
               <td>Pedro de Valdivia 123</td>            
             </tr>
             <tr>
-              <td><input type="radio" /></td>
+              <td><input type="radio" name="bici" value="245369">
               <td>245369</td>
               <td>Manuel Montt 2563</td>
             </tr>
             <tr>
-              <td><input type="radio" /></td>
+              <td><input type="radio" name="bici" value="332244">
               <td>332244</td>
               <td>Nueva Providencia 11200</td>
             </tr>
           </tbody>
         </table>
-    </div>   
+      </div>   
     <div class="container">
         <div class="col text-center" id="boton_1" >
-            <button class="btn button-orange text-white px-5" id="submit"type="button">Aceptar</button>
+            <button class="btn button-orange text-white px-5" id="submit"type="button" onclick="location.href='desbloquear.html'">Generar</button>
         </div>
-    </div> 
-          
-        
-    <script src="js/search.js"></script> 
+    </div>      
+   
 </body>
 </html>
