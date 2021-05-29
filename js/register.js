@@ -4,6 +4,10 @@ function registerSubmit(event) {
     let email = document.getElementById("email").value;
     let passwordRepeat = document.getElementById("password-repeat").value;
     let address = document.getElementById("address").value;
+    let card_num = document.getElementById("card_num").value;
+    let mmaa = document.getElementById("mmaa").value;
+    let cvv = document.getElementById("cvv").value;
+    let emisor = document.getElementById("emisor").value;
     
     if (password === passwordRepeat) {
         event.preventDefault();
@@ -14,9 +18,13 @@ function registerSubmit(event) {
         password: ${password} 
         password repeat: ${passwordRepeat}
         dirección: ${address}
+        card_num: ${card_num}
+        mmaa: ${mmaa}
+        cvv: ${cvv}
+        emisor: ${emisor}
         `);
         alert("Registro exitoso!");
-        window.location = "./card.html"
+        window.location = "./login.html"
     } else {
         alert("contraseñas no coinciden");
     }

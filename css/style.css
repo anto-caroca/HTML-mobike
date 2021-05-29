@@ -80,6 +80,10 @@
         justify-self: center!important;
     }
 
+    .card-data{
+        color:#ff2600!important;
+    }
+
     .orange {
         background-color: #ff2600!important;
         color: #ffffff;

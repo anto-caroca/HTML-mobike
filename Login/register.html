@@ -40,7 +40,7 @@
                 <i class="fa fa-twitter p-3" title="twitter"></i>
             </div> 
             <div class="row h-90 d-flex justify-content-center">
-                <div class="col-lg-6 col-md-8 col-sm-12 my-auto">
+                <div class="col-lg-6 col-md-10 col-sm-12 my-auto">
                     <h1 class="text-center mb-5 text-white fw-bold">MoBike</h1>
                     <form id="register-form" method="post">
                         <div class="input-group mb-4 pl-white">
@@ -63,13 +63,43 @@
                             <i class="fas fa-map-marker-alt"></i>
                             <input type="text" class="form-control input-orange" id="address" placeholder="dirección" aria-describedby="inputGroupPrepend5" required>
                         </div>
-                        
-                        <div class="d-grid gap-2">
-                            <button class="btn button-orange mt-5" type="submit" title="Registrar">
-                                <i class="fas fa-exclamation-circle"></i>
-                                Registrar Tarjeta de Crédito
-                            </button>
+                             
+                        <h5 class="text-center mb-3 text-white fw-bold card-data">Datos Tarjeta de Crédito</h5>
+                
+                        <div class="input-group mb-4 pl-white">
+                            <i class="fas fa-credit-card"></i>
+                            <input type="password" class="form-control input-orange" id="card_num" minlength="9" maxlength="9" placeholder="número de tarjeta" aria-describedby="inputGroupPrepend2" required>
                         </div>
+                                
+                        <div class="input-group mb-4 pl-white">
+                            <i class="fas fa-calendar-alt"></i>
+                            <input type="text" class="form-control input-orange" id="mmaa" minlength="4" maxlength="4" placeholder="MMAA" aria-describedby="inputGroupPrepend5" required>
+                        </div>
+                        <div class="input-group mb-4 pl-white">
+                            <i class=" fa fa-lock"></i>
+                            <input type="password" class="form-control input-orange" id="cvv" minlength="3" maxlength="3" placeholder="CVV" aria-describedby="inputGroupPrepend6" required>
+                        </div>
+                        <div class="input-group mb-4 pl-white">
+                            <i class="fas fa-money-check-alt"></i>
+                            <select class="form-control select-orange" name="emisor" id="emisor" placeholder="emisor" aria-describedby="inputGroupPrepend7" required>
+                                <option value="">Emisor</option>
+                                <option value="Banco de Chile">Banco BICE</option>
+                                <option value="Banco de Chile">Banco de Chile</option>
+                                <option value="Banco de Chile">Banco de Crédito e Inversiones</option>
+                                <option value="Banco Estado">Banco Corpbanca</option>
+                                <option value="Banco Estado">Banco Internacional</option>
+                                <option value="Banco Estado">Banco Estado</option>
+                                <option value="Banco Santander">Banco Santander</option>
+                                <option value="Banco Scotiabank">Banco Scotiabank</option>
+                            </select>
+                        </div>
+
+                    <div class="d-grid gap-2">
+                                <button class="btn button-orange mt-5" type="submit" title="Registrar">
+                                    <i class="fas fa-exclamation-circle"></i>
+                                    Registrarme en MoBike
+                                </button>
+                            </div>
                     </form>
                     
                     <p class="d-flex justify-content-center pt-5 mt-5">
